@@ -20,10 +20,10 @@ def main():
             print("Please choose a correct option.\n")
             return main()
     except ValueError:
-        print("Please enter a valid number.")
+        print("Please enter a valid number.\n")
         return main()
     except Exception as e:
-        print("An error has occurred...")
+        print("An error has occurred...\n")
         print("(There may be no recorded users. Please Sign Up!)\n")
         return main()
 
