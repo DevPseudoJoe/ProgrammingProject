@@ -17,10 +17,11 @@ def main():
         elif firstoption == 3:
             sys.exit()
         else:
-            print("Please choose a correct option\n")
+            print("Please choose a correct option.\n")
             return main()
     except ValueError:
-        print("Please enter a valid number...")
+        print("Please enter a valid number.")
+        return main()
     except Exception as e:
         print("An error has occurred...")
         print("(There may be no recorded users. Please Sign Up!)\n")
