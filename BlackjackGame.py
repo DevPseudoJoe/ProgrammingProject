@@ -225,7 +225,7 @@ def game(total):
             dealerSelection, value = dealerTakeCard(cards)
             dealer.append(dealerSelection)
             dealerTotal += value
-            print(f"\n>The dealer's new card is a{formatCard(dealerSelection)}")
+            print(f"\n>The dealer's new card is a {formatCard(dealerSelection)}")
 
         showcardsv2(dealer, player, playerTotal, dealerTotal)
 
