@@ -193,6 +193,9 @@ def game(total):
     if bet > total:
         print("\nPlease enter a bet that is lower than your total.\n")
         return game(total)
+	if bet < 1:
+    	print("\nPlease enter a bet that is greater than 0.\n")
+    	return game(total)
 
     print("Bet accepted")
     total -= bet
