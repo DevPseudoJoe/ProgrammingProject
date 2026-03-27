@@ -188,6 +188,7 @@ def game(total):
         bet = int(input(f"\nYour chips total to £{total}. How much will you bet?\n>>> "))
     except:
         print("\nPlease enter a number! Game Restarting...\n")
+	    total += bet
         return game(total)
 
     if bet > total:
@@ -217,6 +218,7 @@ def game(total):
         playerDecision = int(input("\nPlease enter an option >>> "))
     except:
         print("Invalid input")
+        total += bet
         return game(total)
 
     if playerDecision == 1:
@@ -261,7 +263,9 @@ def game(total):
             try:
                 playerDecision = int(input("\nPlease enter an option >>> "))
             except:
-                return game(total)
+            print("Invalid input")
+	        total += bet
+            return game(total)
 
             if playerDecision == 1:
                 break
